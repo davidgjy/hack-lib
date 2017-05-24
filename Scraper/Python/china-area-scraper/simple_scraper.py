@@ -8,6 +8,10 @@ import urllib
 from urllib.request import urlretrieve
 from urllib.request import urlopen
 
+conn = pymysql.connect(host='localhost', user='root', passwd='mysql', db='mysql', port=3306, charset='utf8')
+cur = conn.cursor()
+cur.execute("USE scraper")
+
 def is_number(s):
     try:
         float(s)
