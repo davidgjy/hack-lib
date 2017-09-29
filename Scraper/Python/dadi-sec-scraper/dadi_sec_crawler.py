@@ -1,7 +1,7 @@
 import openpyxl
 import pymysql
 
-conn = pymysql.connect(host='localhost', user='root', passwd='mysql', db='repairtstdb', port=3306, charset='utf8')
+conn = pymysql.connect(host='localhost', user='root', passwd='mysql', db='scraper', port=3306, charset='utf8')
 cur = conn.cursor()
 
 def clearTable():
